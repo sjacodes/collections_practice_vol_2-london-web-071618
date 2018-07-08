@@ -27,7 +27,7 @@ def count_elements(array)
   array.each do |item| 
     new_array << item unless new_array.include?(item)}  
   new_array.each do |item| 
-    arr = my_arr.select{|thing| item == thing}
+     = my_arr.select{|thing| item == thing}
 +    item[:count] = arr.length
 +  end
 +  return new_array
