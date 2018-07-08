@@ -32,7 +32,8 @@ def count_elements(array)
   return new_array
 end
   
-
+def merge_data(keys, data)
+  
     # Question 6
 
     it 'combines two nested data structures into one' do
