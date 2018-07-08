@@ -23,6 +23,11 @@ def remove_non_strings(array)
 end
 
 def count_elements
+  count = 0
+  
+  
+  
+  
   
 describe '#count_elements' do
 
