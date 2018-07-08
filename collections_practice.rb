@@ -23,7 +23,14 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
-
+  new_array = []
+  my_arr.each { |item| new_array << item unless new_array.include?(item)}
++  new_array.each do |item| 
++    arr = my_arr.select{|thing| item == thing}
++    item[:count] = arr.length
++  end
++  return new_array
++end
   
   
 describe '#count_elements' do
