@@ -47,25 +47,18 @@ end
 
 
 def organize_schools(array)
-  
-
-
-
-
-  describe '#organize_schools' do
-
-    # Question 8
-
-    it 'organizes the schools by location' do
-      expect(organize_schools(schools)).to eq(organized_schools)
+  by_location = {}
+    schools.each do |school, location_hash|
+      location_hash.each do |symbol, location|
+        if by_location[location] == nil
+          by_location[location] = [school]
+        else
+          by_location[location] << school
+        end
+      end
     end
-
-  end
-
+    by_location
 end
-
-
-
 
 
 
