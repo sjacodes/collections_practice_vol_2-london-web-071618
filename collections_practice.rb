@@ -33,7 +33,10 @@ def count_elements(array)
 end
   
 def merge_data(keys, data)
-  
+  keys.map do |key|
+    key.merge(data[0][key[:first_name]].to_h)
+  end
+end
     # Question 6
 
     it 'combines two nested data structures into one' do
