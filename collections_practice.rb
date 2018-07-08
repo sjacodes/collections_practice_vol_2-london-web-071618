@@ -45,3 +45,30 @@ def find_cool(array)
   end
 end
 
+
+def organize_schools(array)
+  
+
+
+
+
+  describe '#organize_schools' do
+
+    # Question 8
+
+    it 'organizes the schools by location' do
+      expect(organize_schools(schools)).to eq(organized_schools)
+    end
+
+  end
+
+end
+
+
+
+
+
+
+  
+
+  
