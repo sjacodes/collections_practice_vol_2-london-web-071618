@@ -37,38 +37,6 @@ def merge_data(keys, data)
     key.merge(data[0][key[:first_name]].to_h)
   end
 end
-    # Question 6
-
-    it 'combines two nested data structures into one' do
-      expect(merge_data(keys, data)).to eq(merged_data)
-    end
-
-  end
-
-  describe '#find_cool' do
-
-    # Question 7
-
-    it 'find all cool hashes' do
-      expect(find_cool(cool)).to eq([{:name => "blake",:temperature => "cool"}])
-    end
-
-  end
-
-  describe '#organize_schools' do
-
-    # Question 8
-
-    it 'organizes the schools by location' do
-      expect(organize_schools(schools)).to eq(organized_schools)
-    end
-
-  end
-
-end
-
-
-
-
+    
 
   
